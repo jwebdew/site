@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/* 구글웹폰트 */
+ 
+
+ 
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+/* noto snas */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 
+브라우저의 기본 폰트 사이즈는 16px이라고 계속 말했지만, 그건 어디까지나 사용자가 건들지 않았을 경우입니다.
+작은 글씨가 불편한 사용자는 웹 브라우저 설정에서 '폰트 기본 사이즈: 크게'와 같이 지정할 수 있어요.
+이런 식으로 Large 사이즈를 지정하면 기본 폰트 사이즈가 16px이 아닌 20px이 됩니다.
+그런데 우리가 "안됩니다 html은 무조건 10px이여야 해요"이라고 하면 당황스럽겠죠! 웹 접근성 취지에서도 어긋나고요.
+하지만 %로 지정해두었으니, 사용자가 폰트 기본 사이즈를 Large로 바꾸든 Small로 바꾸든 그에 대응할 수 있습니다.
+rem 단위를 썼을 때 좋은 점은 이러한 경우에도 잘 대응해서 누구에게나 잘 보이는 웹 페이지를 만들 수 있다는 거죠!*/
+
+/* font-size: 10px / 1rem
+    12px  1.2rem
+    */
+    /* 
+    기본 폰트 사이즈 16px = 1rem, 
+    17px = 1.063rem
+    */
+
+html, body {
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    font-family: 'Cafe24SsurroundAir';
+    font-size: 62.5%; /* font-size: 10px / font-size: 1rem */
+    color: #333;
+}
+a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+h4 {
+    font-family: 'GmarketSansMedium';
+}
+.title h3 {
+    font-size: 5rem;
+    text-align: left;
+    font-weight: 700;
+    font-family: 'GmarketSansMedium';
+}
+.title p {
+    font-size: 2.0rem;
+    text-align: left;
+    color: rgba(42, 42, 42, .6);
+    line-height: 1.3;
+    margin-top: 15px;
+}
+.btn {
+    font-size: 16px;
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #086961;
+    border-radius: 40px;
+    box-shadow: 0 4px 16px rgba(8, 105, 97, .5);
+    color: #fff;
+    margin-top: 80px;
+    transition: .5s;
+}
+.btn:hover { 
+    background-color: #085952;
+}
+.title_btn {
+    font-size: 16px;
+    border-radius: 40px;
+    background-color: #A6360D;
+    display: inline-block;
+    padding: 14px 30px;
+    margin-top: 50px;
+}
+.title_btn a {
+    color: #fff;
+}
+footer {
+    padding: 50px 0 ;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+footer div {
+    text-align: center;
+   
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+footer img {
+    display: inline-block;
+    vertical-align: middle;
+}
+footer address {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #888;
+}
+    
