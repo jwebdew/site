@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상선택자</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 가상선택자 : before, after
+        스타일에서 선택자 추가
+        글자, 특수기호, 이미지, 도형, 아이콘등 추가 가능 */
+        /* 가상선택자는 inline요소
+        content는 필수적으로 적용 */
+        h3::before {
+            content: 'before:';
+            color: crimson;
+            font-size: 40px;
+        }
+
+        /* 윈도우 + . */
+        /* 자음 + 한자키 */
+        h3::after {
+            content: '😍';
+        }
+
+        body {
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 50px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h4::before {
+            content: '';
+            width: 100%;
+            height: 20px;
+            background-color: rgba(255, 255, 0, 0.526);
+            /* display: block; */
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>가상선택자</h3>
+    <h4>제주 동부 추천스팟</h4>
+</body>
+
+</html>
