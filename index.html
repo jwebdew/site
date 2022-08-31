@@ -1,613 +1,387 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹/앱 퍼블리싱 수업</title>
-    <link href="css/main.css" rel="stylesheet" />
+    <title>JWD_D CLASS</title>
+    <!-- 스와이퍼 swiper cdn연결하여 사용하기 
+        https://swiperjs.com/get-started#use-swiper-from-cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="lib/carouselTicker.css" rel="stylesheet" type="text/css"/>
 
-    <script src="../../lib/jquery-3.6.0.min.js"></script>
-    <script>
-        $(function(){
-            $('.publ .menu li').click(function(){
-                $('.menu li').removeClass('on');
-                $(this).addClass('on');
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
 
-                $('.publ .cont').removeClass('on');
-                $('.publ .cont').eq($(this).index()).addClass('on');
-            });
-        });
-    </script>
+     <!-- xeicon https://xpressengine.github.io/XEIcon/index.html-->
+    <link rel="stylesheet" href="lib/XEIcon-2.2.0/xeicon.min.css" />
+
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    
 </head>
-
 <body>
-    <header>
-        <h1>
-            <a href="../../index.html">
-                <img src="../../img/footer_logo.png" alt="하수정" />
-            </a>
-        </h1>
-        <p>jwebdew</p>
-    </header>
-    <section class="publ">
-        <ul class="menu">
-            <li class="on">참고사이트</li>
-            <li>영상편집 웹</li>
-            <li>재직자 기초</li>
-            <li>재직자 중급</li>
-        </ul>
-        <div class="cont on"><!-- 01 참고사이트 -->
-            <div class="info">
-                <h4>디자인 레퍼런스</h4>
-                <a href="#">
-                    <ul>
-                        <li><strong>GDWEB</strong></li>
-                        <li>국내외 웹사이트와 모바일</li>
-                    </ul>
-                </a>
-                <a href="#">
-                    <ul>
-                        <li><strong>DBCUT</strong></li>
-                        <li>국내 모든 웹사이트</li>
-                    </ul>
-                </a>
-                <a href="#">
-                    <ul>
-                        <li><strong>pinterest</strong></li>
-                        <li>스크랩하고자 하는 이미지를 포스팅하고 다른 이용자와 공유하는 소셜 네트워크 서비스</li>
-                    </ul>
-                </a>
-                <a href="#">
-                    <ul>
-                        <li><strong>노트폴리오</strong></li>
-                        <li>아티스트와 디자이너들이 한 곳에 모여 자신의 작업을 공개하고 이야기하는 공간</li>
-                    </ul>
-                </a>
-
-                <a href="#">
-                    <ul>
-                        <li><strong>behance</strong></li>
-                        <li>비핸스는 어도비 크리에이티브 클라우드로 저작한 작품 등을 전시하고 검색할 수 있는 무료 온라인 웹사이트</li>
-                    </ul>
-                </a>
-
-                <a href="https://hue.tools/">
-                    <ul>
-                        <li><strong>hue tools</strong></li>
-                        <li>색상, 명도, 채도를 조절하여 컬러값을 확인 가능</li>
-                    </ul>
-                </a>
-
-                <a href="https://colorhunt.co/">
-                    <ul>
-                        <li><strong>컬러헌트</strong></li>
-                        <li>색상조합 사이트</li>
-                    </ul>
-                </a>
-
-                <a href="#">
-                    <ul>
-                        <li><strong>어도비 컬러</strong></li>
-                        <li>이미지를 사용하여 색상 팔레트를 만들거나 수천 개에 이르는 색상 조합</li>
-                    </ul>
-                </a>
+    <main>
+        <div class="main_visual">
+            <!-- <video muted autoplay>
+                <source src="img/door_bg.mp4" type="video/mp4" />
+            </video> -->
+        
+             
+            <div class="title">
+                <p>web design class</p>
+                <h2>Ha Su Jeong Designer</h2>
             </div>
-           
+            <p>JWD_D by hasujeong</p>
+        </div><!-- .main_visual -->
+        <section class="cont02">
+            <div class="cont02_wrap">
+                <div class="left">
+                    <div class="title">                 
+                        <h3>웹디자이너<br />즐겨찾기</h3>
+                        <p>웹디자인 제작시 활용하기 좋은 사이트<br />확장/설치 프로그램</p>
+                    </div><!-- .title end -->
+                    <article>
+                        <a href="#">
+                            <img src="img/book_01.jpg" alt="디자인프로그램 및 구글 확장프로그램" />
+                            <p>프로그램 및 사이트 안내</p>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="sub/book02.html" target="_blank">
+                            <img src="img/book_03.jpg" alt="디자인공부하기 좋은 사이트" />
+                            <p>웹 수업파일 업로드</p>
+                        </a>
+                    </article>
+                    
+                </div><!-- .left end -->
+                <div class="right">
+                    <article>
+                        <a href="sub/template/index.html">
+                            <img src="img/book_02.jpg" alt="디자인 및 코딩무료 소스 제공 사이트" />
+                            <p>기본형/반응형 웹 템플릿 디자인</p>
+                        </a>
+                    </article>
+                    
+                </div><!-- .right end -->
+                 
+            </div><!-- cont02_wrap end -->
+        </section><!-- .cont02 end -->
+
+        <section class="cont01"> 
+            <div class="left">
+                <div>
+                    <article> 
+                        <a href="#">
+                            <figure>
+                                <img src="img/study_d.jpg" alt="웹 코딩 수업" />
+                            </figure> 
+                            <p>PDF 다운로드<i class="xi-download"></i></p>
+                        </a> 
+                    </article>
+                </div>
+            </div><!-- .left -->
+            
+            <div class="right">
+                <div class="title">                 
+                    <h3>웹디자인과정 수업자료</h3>
+                    <p>웹디자인관련 과정에서 사용되고 있는<br />커리큘럼과 수업자료</p>
+                </div><!-- .title end -->
+                <div class="flex">
+                    <article>
+                        <a href="sub/publishing/index.html" target="_blank">
+                            <figure>
+                                <img src="img/study01.jpg" alt="웹 코딩 수업" />
+                            </figure>
+                            <dl>
+                                <dt>웹/앱 퍼블리싱 수업</dt>
+                                <dd>웹/앱 디자인 과정에서<br />
+                                    웹/앱 페이지 구현을 위한 코딩 강좌</dd>
+                                <dd class="plus"><i class="xi-plus"></i></dd>
+                            </dl>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#">
+                            <figure>
+                                <img src="img/study02.jpg" alt="포토샵/일러스트 수업" />
+                            </figure>
+                            <dl>
+                                <dt>포토샵/일러스트 수업</dt>
+                                <dd>웹디자인 과정에서<br />
+                                    디자인 구성과 설계를 위한 강좌</dd>
+                                <dd class="plus"><i class="xi-plus"></i></dd>
+                            </dl>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#">
+                            <figure>
+                                <img src="img/study04.jpg" alt="웹 코딩 수업" />
+                            </figure>
+                            <dl>
+                            <dt>ncs 수업</dt>
+                            <dd>웹디자인 과정에서<br />
+                                실무에서 필요한 지식 및 스킬에 대한 ncs수업</dd>
+                                <dd class="plus"><i class="xi-plus"></i></dd>
+                            </dl>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#">
+                            <figure>
+                                <img src="img/study03.jpg" alt="웹페이지 실무 자료" />
+                            </figure>
+                            <dl>
+                                <dt>포트폴리오 모음</dt>
+                                <dd>웹디자인 과정에서 제작된<br />
+                                    훈련생들의 포트폴리오 정리</dd>
+                                <dd class="plus"><i class="xi-plus"></i></dd>
+                            </dl>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section><!-- .cont01 -->
+
+    
+        <section class="cont03"> 
+            <div class="cont03_tit">
+                <div class="title">
+                    <h3>레이아웃/ 템플릿</h3>
+                    <p>디자인, 코딩 수업 시 사용된<br />
+                        레이아웃과 템플릿</p>
+                </div>
+                <p class="title_btn"><a href="#">페이지 바로가기</a></p>
+            </div><!-- cont03_tit end -->
+            <div class="cont03_slider">
+            
+                <div class="swiper cont03_sliders">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="sub/tem_2/index.html" target="_blank">
+                                <p><img src="img/list02.jpg" alt=""></p>
+                                <dl>
+                                    <dt>#영상 포트폴리오</dt>
+                                    <dd>모션/영상 포트폴리오 템플릿vol.1</dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <p><img src="img/list02.jpg" alt=""></p>
+                            <dl>
+                                <dt>Lorem Ipsum</dt>
+                                <dd>Lorem Ipsum Lorem Ipsum</dd>
+                            </dl>
+                        </div>
+                        <div class="swiper-slide">
+                            <p><img src="img/list01.jpg" alt=""></p>
+                            <dl>
+                                <dt>Lorem Ipsum</dt>
+                                <dd>Lorem Ipsum Lorem Ipsum</dd>
+                            </dl>
+                        </div>
+                        <div class="swiper-slide">
+                            <p><img src="img/list01.jpg" alt=""></p>
+                            <dl>
+                                <dt>Lorem Ipsum</dt>
+                                <dd>Lorem Ipsum Lorem Ipsum</dd>
+                            </dl>
+                        </div>
+                        <div class="swiper-slide">
+                            <p><img src="img/list01.jpg" alt=""></p>
+                            <dl>
+                                <dt>Lorem Ipsum</dt>
+                                <dd>Lorem Ipsum Lorem Ipsum</dd>
+                            </dl>
+                        </div>
+                        <div class="swiper-slide">
+                            <p><img src="img/list01.jpg" alt=""></p>
+                            <dl>
+                                <dt>Lorem Ipsum</dt>
+                                <dd>Lorem Ipsum Lorem Ipsum</dd>
+                            </dl>
+                        </div>
+                        <div class="swiper-slide">
+                            <p><img src="img/list01.jpg" alt=""></p>
+                            <dl>
+                                <dt>Lorem Ipsum</dt>
+                                <dd>Lorem Ipsum Lorem Ipsum</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn_wrap">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div> 
+        </section><!-- .cont03 end -->
+
+        <!-- <section class="cont04"> 
             <div>
-                <h4>무료 제공 / 다운로드</h4>
+                <article>
+                    <a href="#">
+                        <dl>
+                            <dt>과정수업내용</dt>
+                            <dd>각 과정에 대한 수업자료</dd>
+                            <dd><button type="button" onclick="window.open('http://webtong.kr') ">웹통으로  새창이동</button></dd>
+                        </dl>
+                         
+                    </a>
+                </article>
 
-                <a href="#">
-                    <ul>
-                        <li><strong>unsplash</strong></li>
-                        <li>자유 저작권 고해상도 사진을 무료로 제공</li>
-                    </ul>
-                </a>
+                <article>
+                    <a href="#">
+                        <dl>
+                            <dt>포트폴리오</dt>
+                            <dd>웹디자이너 포트폴리오 모음</dd>
+                            <dd><button type="button" onclick="window.open('http://webtong.kr') ">웹통으로  새창이동</button></dd>
+                        </dl>
+                         
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <dl>
+                            <dt>벤치마킹</dt>
+                            <dd>벤치마킹 스크린샷 모음</dd>
+                            <dd><button type="button" onclick="window.open('http://webtong.kr') ">웹통으로  새창이동</button></dd>
+                        </dl>
+                        
+                    </a>
+                </article>
 
-                <a href="#">
-                    <ul>
-                        <li><strong>픽사베이</strong></li>
-                        <li>무료 공개 사진, 일러스트레이션, 벡터 그래픽 및 동영상의 필름 영상을 공유</li>
-                    </ul>
-                </a>
-                
-                <a href="#">
-                    <ul>
-                        <li><strong>플랫아이콘</strong></li>
-                        <li>무료 아이콘(횟수제한)</li>
-                    </ul>
-                </a>
-
-                <a href="#">
-                    <ul>
-                        <li><strong>눈누</strong></li>
-                        <li>상업용 한글 폰트 오픈소스로 웹폰트로 사용 / 다운로드</li>
-                    </ul>
-                </a>
-
-                <a href="#">
-                    <ul>
-                        <li><strong>구글폰트</strong></li>
-                        <li>모든언어의 폰트를 웹폰트로 사용할 수 있도록 오픈소스 제공</li>
-                    </ul>
-                </a>
-
-                <a href="https://kr.freepik.com/free-psd" target="_blank">
-                    <ul>
-                        <li><strong>freepik 프리픽</strong></li>
-                        <li>그래픽 리소스를 제공, 벡터, 스톡 포토, PSD, 아이콘</li>
-                    </ul>
-                </a>
-
-                
-            </div>
-            <div>  
-                <h4>css, js effect</h4>
-                <a href="https://cssgradient.io/" target="_blank">
-                    <ul>
-                        <li><strong>cssgradient</strong></li>
-                        <li><strong>그라데이션</strong>그라데이션 css코드 제작 가능</li>
-                    </ul>
-                </a>
-
-                <a href="#" target="_blank">
-                    <ul>
-                        <li><strong>xeicon</strong></li>
-                        <li><strong>폰트아이콘</strong>웹사이트 제작에 최적화된 벡터 그래픽 아이콘</li>
-                    </ul>
-                </a>
-                
-                
-
-                <a href="#" target="_blank">
-                    <ul>
-                        <li><strong>swiper</strong></li>
-                        <li><strong>슬라이드</strong>슬라이드 플러그인, flex로 이루어짐</li>
-                    </ul>
-                </a>
-
-                <a href="#" target="_blank">
-                    <ul>
-                        <li><strong>slick slider</strong></li>
-                        <li><strong>슬라이드</strong>슬라이드 플러그인, float:left로 이루어짐</li>
-                    </ul>
-                </a>
-
-                <a href="#" target="_blank">
-                    <ul>
-                        <li><strong>fullpage.js</strong></li>
-                        <li><strong>마우스휠스크롤</strong>웹 사이트에서 스크롤하면 페이지 단위로 움직이는 제이쿼리 플러그인</li>
-                    </ul>
-                </a>
-
-                <a href="https://www.jqueryscript.net/demo/Carousel-Style-Content-Ticker-Plugin-with-jQuery-Carousel-Ticker/" target="_blank">
-                    <ul>
-                        <li><strong>Carousel Ticker</strong></li>
-                        <li>컨텐츠를 좌우로 회전시켜 이동시켜주는 티커 플러그인 </li>
-                    </ul>
-                </a>
-
-                <a href="https://alvarotrigo.com/blog/best-css-button-hover-effects/" target="_blank">
-                    <ul>
-                        <li><strong>css button hover effects</strong></li>
-                        <li>버튼 호버 스타일 10<br />[scss로 된 코드는 사용하지 말 것]</li>
-                    </ul>
-                </a>
-                <a href="https://ianlunn.github.io/Hover/" target="_blank">
-                    <ul>
-                        <li><strong>Hover.css</strong></li>
-                        <li>버튼 호버 스타일<br />[참고만 하고 코드 직접 작성하는 것이 좋음]</li>
-                    </ul>
-                </a>
-
-                <a href="https://tympanus.net/Development/HoverEffectIdeas/" target="_blank">
-                    <ul>
-                        <li><strong>Hover Effect Ideas</strong></li>
-                        <li>이미지 호버 스타일1</li>
-                    </ul>
-                </a>
-
-                <a href="https://imagehover.io/" target="_blank">
-                    <ul>
-                        <li><strong>Image Hover</strong></li>
-                        <li>이미지 호버 스타일2</li>
-                    </ul>
-                </a>
-
-                <a href="https://alvarotrigo.com/blog/best-css-button-hover-effects/" target="_blank">
-                    <ul>
-                        <li><strong>animate.css</strong></li>
-                        <li>메인화면에 동적인 효과 제공</li>
-                    </ul>
-                </a>
+                <div class="cont04_img">
+                    <div></div>
+                    <div></div>
+                </div>
 
             </div>
+        </section> --><!-- .cont04 end -->
 
+        <section class="cont05">
+            <div class="title">
+                <h3>작업 결과물</h3>
+                <p>훈련생들과 수업과정에 대한 작업결과물</p>
+            </div>
+            
+            <article>
+                <div id="carouselTicker-width-resize" class="carouselTicker">
+                    <ul class="carouselTicker__list">
+                        <li class="carouselTicker__item">
+                            <a href="http://hxxznro.dothome.co.kr/portfolio.html" target="_blank">
+                                <img src="img/green/20210412_01.jpg" alt="고혜진포트폴리오" /> 
+                                <p>고혜진 포트폴리오</p>
+                                <p>#20211029 #반응형웹디자인</p>
+                            </a>
+                        </li>
+                        <li class="carouselTicker__item">
+                            <a href="http://haileykim.pe.kr/" target="_blank">
+                                <img src="img/green/20210412_02.jpg" alt="김가현포트폴리오" />
+                                <p>김가현 포트폴리오</p>
+                                <p>#20211029 #반응형웹디자인</p>
+                            </a>
+                        </li>
+                        <li class="carouselTicker__item">
+                            <a href="http://kwakk11.dothome.co.kr/KwakDaRyeon.html" target="_blank">
+                                <img src="img/green/20210412_03.jpg" alt="곽다련포트폴리오" />
+                                <p>곽다련 포트폴리오</p>
+                                <p>#20211029 #반응형웹디자인</p>
+                            </a>
+                        </li>
+                        <li class="carouselTicker__item">
+                            <a href="http://dlehdwn1105.dothome.co.kr/index.html" target="_blank">
+                                <img src="img/green/20210412_04.jpg" alt="이동주포트폴리오" />
+                                <p>이동주 포트폴리오</p>
+                                <p>#20211029 #반응형웹디자인</p>
+                            </a>
+                        </li>
+                        <li class="carouselTicker__item">
+                            <a href="http://left970.dothome.co.kr/" target="_blank">
+                                <img src="img/green/20210412_05.jpg" alt="좌은정포트폴리오" />
+                                <p>좌은정 포트폴리오</p>
+                                <p>#20211029 #반응형웹디자인</p>
+                            </a>
+                        </li>
+                        <li class="carouselTicker__item">
+                            <a href="" target="_blank">
+                                <img src="https://via.placeholder.com/285x285" alt="결과물썸네일" />
+                                <p>2021.10.29 고혜진 포트폴리오</p>
+                            </a>
+                        </li>
+                        <li class="carouselTicker__item">
+                            <a href="" target="_blank">
+                                <img src="https://via.placeholder.com/285x285" alt="결과물썸네일" />
+                                <p>2021.10.29 고혜진 포트폴리오</p>
+                            </a>
+                        </li>
+                        <li class="carouselTicker__item">
+                            <a href="" target="_blank">
+                                <img src="https://via.placeholder.com/285x285" alt="결과물썸네일" />
+                                <p>2021.10.29 고혜진 포트폴리오</p>
+                            </a>
+                        </li>
+                        <li class="carouselTicker__item">
+                            <a href="" target="_blank">
+                                <img src="https://via.placeholder.com/285x285" alt="결과물썸네일" />
+                                <p>2021.10.29 고혜진 포트폴리오</p>
+                            </a>
+                        </li>
+                        <li class="carouselTicker__item">
+                            <a href="" target="_blank">
+                                <img src="https://via.placeholder.com/285x285" alt="결과물썸네일" />
+                                <p>2021.10.29 고혜진 포트폴리오</p>
+                            </a>
+                        </li>
+                         
+                    </ul>
+                </div>
+            </article>
+        </section><!-- .cont05 end -->
+        
+        <footer>
             <div>
-                <h4>그 외 기타</h4>
+                <img src="img/footer_logo.png" alt="하수정" />
+                <address>Copyright 2022. hasujeong All rights reserved.</address>
             </div>
+        </footer>
+    </main>
+
+    <script src="lib/jquery-3.6.0.min.js"></script> 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script><!-- 스와이퍼 -->
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script src="lib/jquery.carouselTicker.min.js"></script>
+    <script src="lib/start.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+          }
+        });
+
+        // $('.cont03_sliders').slick({
+        //     infinite: true,
+        //     slidesToShow: 4,
+        //     slidesToScroll: 1,
+        //     // centerMode: true,
+        //     focusOnSelect: true
+        // });
+        var swiper = new Swiper(".cont03_sliders", {
+            slidesPerView: 3.7,
+            spaceBetween: 30,
             
-        </div><!-- 01 end -->
-        <div class="cont"><!-- 02 영상편집 -->
-            
-            <article>
-                <figure>
-                    <!-- <img src="img/img03.jpg" alt="" /> -->
-                    <figcaption>📧</figcaption>
-                </figure>
-                <div>
-                    <h4>폼태그 구성 input</h4>
-                    <p><span>#html</span> #input #text #password #select</p>
-                    <ul class="btn2">
-                        <li><a href="../video/input.html" target="_blank">Design1</a></li>
-                        <!-- <li><a href="#!" target="_blank">Code</a></li> -->
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-
-            <article>
-                <figure>
-                    <img src="img/img03.jpg" alt="" />
-                </figure>
-                <div>
-                    <h4>이미지 태그 사용</h4>
-                    <p><span>#css</span> #img #이미지사용제작 #radius</p>
-                    <ul class="btn2">
-                        <li><a href="../video/img1.html" target="_blank">Design1</a></li>
-                        <li><a href="../video/img2.html" target="_blank">Design2</a></li>
-                        <!-- <li><a href="#!" target="_blank">Code</a></li> -->
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-
-            <article>
-                <figure>
-                    <img src="../video/img/photo2.jpg" alt="" />
-                </figure>
-                <div>
-                    <h4>배경이미지 사용</h4>
-                    <p><span> #css </span> #background# 이미지사용제작 #radius</p>
-                    <ul>
-                        <li><a href="../video/background-image.html" target="_blank">Design1</a></li> 
-                        <!-- <li><a href="#!" target="_blank">Code</a></li> -->
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-
-            <article>
-                <figure>
-                    <!-- <img src="img/magic_layout.png" alt="" /> -->
-                    <figcaption>🌼</figcaption>
-                </figure>
-                <div>
-                    <h4>가상선택자 사용</h4>
-                    <p><span>#css</span> <span>#::before</span> #::after #인라인요소</p>
-                    <ul>
-                        <li><a href="../video/before_after.html" target="_blank">Design</a></li>
-                        <!-- <li><a href="#">Code</a></li> -->
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-
-
-            <article>
-                <figure>
-                    <img src="../video/img/coffee02.jpg" alt="" />
-                </figure>
-                <div>
-                    <h4>이미지 회전</h4>
-                    <p><span>#css</span> #transform #rotate  #컨텐츠 회전 #:hover</p>
-                    <ul>
-                        <li><a href="../video/rotate.html" target="_blank">Design</a></li>
-                        <!-- <li><a href="#!" target="_blank">Code</a></li> -->
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-
-            <article>
-                <figure>
-                    <img src="../video/img/cafe03.jpg" alt="" />
-                </figure>
-                <div>
-                    <h4>이미지 확대</h4>
-                    <p><span> #cs</span>#transform#scale s #이미지확대 #:hover</p>
-                    <ul>
-                        <li><a href="../video/scale.html" target="_blank">Design</a></li>
-                        <!-- <li><a href="#!" target="_blank">Code</a></li> -->
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-
-            <article>
-                <figure>
-                    <img src="img/img01.jpg" alt="" />
-                </figure>
-                <div>
-                    <h4>컨텐츠 버튼 호버 효과</h4>
-                    <p><span>#cs</span> #:hovers #버튼 #컨텐츠</p>
-                    <ul>
-                        <li><a href="../video/hover_content.html" target="_blank">Design</a></li>
-                        <!-- <li><a href="#">Code</a></li> -->
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-
-            <article>
-                <figure>
-                    <img src="img/img02.jpg" alt="" />
-                </figure>
-                <div>
-                    <h4>텍스트 나타나기</h4>
-                    <p><span>#css</span> #position #absolute #relative #transition</p>
-                    <ul>
-                        <li><a href="../video/text_top.html" target="_blank">Design</a></li>
-                        <!-- <li><a href="#">Code</a></li> -->
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-
-            <article>
-                <figure>
-                    <img src="img/youtube.png" alt="" />
-                </figure>
-                <div>
-                    <h4>유튜브 연결</h4>
-                    <p><span>#css</span> #youtube #유튜브 #iframe</p>
-                    <ul>
-                        <li><a href="../video/youtube.html" target="_blank">Design</a></li>
-                        <!-- <li><a href="#">Code</a></li> -->
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-
-            <article>
-                <figure>
-                    <img src="img/youtube_video.png" alt="" />
-                </figure>
-                <div>
-                    <h4>동영상 + 유튜브 레이아웃</h4>
-                    <p><span>#css</span> <span>#레이아웃</span> #youtube #유튜브 #video </p>
-                    <ul>
-                        <li><a href="../video/youtube_video.html" target="_blank">Design</a></li>
-                        <!-- <li><a href="#">Code</a></li> -->
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-
-            <article>
-                <figure>
-                    <img src="img/magic_layout.png" alt="" />
-                </figure>
-                <div>
-                    <h4>매직몰 레이아웃 1단</h4>
-                    <p><span>#css</span> <span>#레이아웃 1단</span> #header #navigation #absolute #relative #transition #img #header</p>
-                    <ul>
-                        <li><a href="../video/text_top.html" target="_blank">Design</a></li>
-                        <!-- <li><a href="#">Code</a></li> -->
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-
-            
-
-            <article>
-                <figure>
-                    <img src="img/tab_menu.png" alt="" />
-                </figure>
-                <div>
-                    <h4>탭메뉴</h4>
-                    <p><span>#js</span> #tab menu #script #스크립트 #자바스크립트 #제이쿼리</p>
-                    <ul>
-                        <li><a href="../video/tab_menu.html" target="_blank">Design</a></li>
-                        <!-- <li><a href="#">Code</a></li> -->
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-
-            <article>
-                <figure>
-                    <img src="img/slide_scroll.png" alt="" />
-                </figure>
-                <div>
-                    <h4>슬라이드 + 스크롤 헤더스타일변화</h4>
-                    <p><span>#js</span> #script #swiper slider #scroll event #자바스크립트 #제이쿼리 #플러그인</p>
-                    <ul>
-                        <li><a href="../video/tab_menu.html" target="_blank">Design</a></li>
-                        <!-- <li><a href="#">Code</a></li> -->
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-
-            <article>
-                <figure>
-                    <img src="img/menu_contentmove.png" alt="" />
-                </figure>
-                <div>
-                    <h4>마우스커서 + 내부페이지이동</h4>
-                    <p><span>#js</span> #script #css #메뉴클릭시페이지이동 부드럽게 #마우스커서 디자인변경</p>
-                    <ul>
-                        <li><a href="../video/cursor_content_move" target="_blank">Design</a></li>
-                        <!-- <li><a href="#">Code</a></li> -->
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-
-            
-        </div><!-- 02 end -->
-        <div class="cont"><!-- 03 재직자 기초-->
-            <!-- 재직자 기초 03 -->
-
-            <article>
-                <figure>
-                    <img src="img/res_hd.png" alt="" />
-                </figure>
-                <div>
-                    <h4>반응형 헤더 변화</h4>
-                    <p><span>#반응형</span> #반응형헤더 #(feat.script) #반응형지도 #메인비주얼고정</p>
-                    <ul>
-                        <li><a href="https://jwebdew.github.io/res_hd/">Design</a></li>
-                        <li><a href="https://github.com/jwebdew/res_hd">Code</a></li>
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-
-            <article>
-                <figure>
-                    <img src="img/map.png" alt="" />
-                </figure>
-                <div>
-                    <h4>반응형 지도</h4>
-                    <p><span>#반응형</span> #지도 #카카오지도 #다음지도 #배경이미지 #배경이미지고정</p>
-                    <ul>
-                        <li><a href="https://jwebdew.github.io/map/map.html">Design</a></li>
-                        <li><a href="https://github.com/jwebdew/map">Code</a></li>
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-
-
-
-            <article>
-                <figure>
-                    <img src="img/res02.png" alt="" />
-                </figure>
-                <div>
-                    <h4>반응형 레이아웃 변화<br />(플렉스레이아웃사용)</h4>
-                    <p><span>#반응형</span> #미디어쿼리 #media screen #responsive #max-width</p>
-                    <ul>
-                        <li><a href="https://jwebdew.github.io/res02/">Design</a></li>
-                        <li><a href="https://github.com/jwebdew/res02">Code</a></li>
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-
-            <article>
-                <figure>
-                    <img src="img/res_change.png" alt="" />
-                </figure>
-                <div>
-                    <h4>반응형 레이아웃 변화</h4>
-                    <p><span>#반응형</span> #미디어쿼리 #media screen #responsive #max-width</p>
-                    <ul>
-                        <li><a href="https://jwebdew.github.io/res_change/">Design</a></li>
-                        <li><a href="https://github.com/jwebdew/res_change">Code</a></li>
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-
-            <article>
-                <figure>
-                    <img src="https://via.placeholder.com/300px300/f25a38/fff/?text=responsive" alt="" />
-                </figure>
-                <div>
-                    <h4>반응형 기초</h4>
-                    <p><span>#반응형</span> #미디어쿼리 #media screen #responsive</p>
-                    <ul>
-                        <li><a href="sub/responsive.html">Design</a></li>
-                        <li><a href="https://codepen.io/hwebdew/pen/MWrLVRY">Code</a></li>
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-
-            <article>
-                <figure>
-                    <img src="img/video.png" alt="" />
-                </figure>
-                <div>
-                    <h4>동영상 + 유튜브</h4>
-                    <p>#영상 #1단레이아웃 #글자스타일 #그라데이션 #video #position #youtube #mp4</p>
-                    <ul>
-                        <li><a href="https://jwebdew.github.io/youtube/동영상+유튜브.html">Design</a></li>
-                        <li><a href="https://github.com/jwebdew/youtube">Code</a></li>
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-
-            <article>
-                <figure>
-                    <img src="https://via.placeholder.com/300px300/e1750e/fff/?text=before / after" alt="" />
-                </figure>
-                <div>
-                    <h4>가상선택자</h4>
-                    <p>#::before #::after #position</p>
-                    <ul>
-                        <li><a href="sub/beforeafter.html">Design</a></li>
-                        <li><a href="#">Code</a></li>
-                    </ul>
-                </div>
-            </article>
-
-            <article>
-                <figure>
-                    <img src="img/hover.png" alt="" />
-                </figure>
-                <div>
-                    <h4>hover효과만들기</h4>
-                    <p> #:hover #position #transform</p>
-                    <ul>
-                        <li><a href="sub/hover.html">Design</a></li>
-                        <li><a href="#">Code</a></li>
-                    </ul>
-                </div>
-            </article>
-
-            <article>
-                <figure>
-                    <img src="https://via.placeholder.com/300px300/143F6B/fff/?text=publishing" alt="" />
-                </figure>
-                <div>
-                    <h4>기초과정 계획안</h4>
-                    <p>#html #css #기초과정 #1일 3시간 #60시간 #20일</p>
-                    <ul>
-                        <li><a href="img/beginner.pdf" target="_blank">plan</a></li>
-                    </ul>
-                </div>
-            </article>
-
-
-
-
-
-
-
-        </div><!-- 03 -->
-
-        <div class="cont"><!-- 04 재직자 중급-->
-            <article>
-                <figure>
-                    <img src="img/res_hd.png" alt="" />
-                </figure>
-                <div>
-                    <h4>스크롤 헤더 스타일 변경</h4>
-                    <p><span>#스크립트</span> #제이쿼리 #조건문 #헤더스타일변화</p>
-                    <ul>
-                        <li><a href="https://jwebdew.github.io/res_hd/">Design</a></li>
-                        <li><a href="https://github.com/jwebdew/res_hd">Code</a></li>
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-            <article>
-                <figure>
-                    <img src="img/html_b.png" alt="" />
-                </figure>
-                <div>
-                    <h4>반응형 레이아웃 B</h4>
-                    <p><span>#스크립트</span> <span>#제이쿼리</span> #헤더스타일변화 #스크롤 컨텐츠변화 #헤더드롭다운 #모바일메뉴 #swiper slide</p>
-                    <ul>
-                        <li><a href="sub/html_b/index.html" target="_blank">Design</a></li>
-                        <li><a href="#!" target="_blank">Code</a></li>
-                    </ul>
-                </div><!-- .info end -->
-            </article>
-        </div><!-- 04 -->
-    </section>
-    <footer>
-        <div>
-            <img src="../../img/footer_logo.png" alt="하수정" />
-            <address>Copyright 2022. hasujeong All rights reserved.</address>
-        </div>
-    </footer>
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+      });
+      </script> -->
 </body>
-
 </html>
