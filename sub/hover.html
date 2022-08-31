@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>호버효과 hover effect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        section {
+            width: 400px;
+            height: 400px;
+            display: inline-block;
+        }
+
+        .items01 {
+            position: relative;
+        }
+
+        .items01 figure {
+            width: 100%;
+            height: 100%;
+        }
+
+        .items01 figure img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .items01 .info {
+            transition: 0.5s;
+            /* 시간설정 */
+            opacity: 0;
+            /* 투명도 0% */
+
+            width: 100%;
+            height: 100%;
+            background-color: #ffcc00;
+            position: absolute;
+            right: 0;
+            top: 0;
+            text-align: center;
+        }
+
+        .items01 .info div {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        .items01 .info div a {
+            width: 120px;
+            height: 40px;
+            background-color: rgb(255, 18, 129);
+            display: block;
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+            border-radius: 3px;
+            margin: 0 auto;
+            /* 가로 : 120px
+            세로 : 40px
+            배경컬러, 글자컬러
+            글자 수직, 수평가운데정렬
+            모서리곡선: 3px
+            가운데 배치
+             */
+        }
+
+        .items01:hover .info {
+            /* transform: translate(20px, 20px); */
+            right: -20px;
+            top: 20px;
+
+            opacity: 1;
+            /* 투명도 100% */
+        }
+
+        .items02 {
+            position: relative;
+        }
+
+        .items02 figure {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 2;
+            transition: 0.5s;
+        }
+
+        .items02 figure img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .items02 .info {
+            background-color: #ff1f80;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        .items02 .info div {
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+        }
+
+        .items02 .info a {
+            width: 120px;
+            height: 40px;
+            background-color: #ffcc00;
+            display: block;
+            line-height: 40px;
+            border-radius: 5px;
+            margin: 0 auto;
+        }
+
+        .items02:hover figure {
+            /* bottom: 150px; */
+            /* top: -150px; */
+            transform: translateY(-150px);
+
+            /* figure한테 transition추가해주기 */
+        }
+
+        .items03 {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .items03 .info {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #cb8e0c;
+            text-align: center;
+        }
+
+        .items03 .info div {
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+        }
+
+        .items03 figure {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .items03 figure img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(0.3);
+            transition: 2s;
+        }
+
+        .items03:hover figure img {
+            transform: scale(02);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="items01">
+        <figure>
+            <img src="images/coffee02.jpg" alt="커피" />
+        </figure>
+        <div class="info">
+            <div>
+                <h4>coffee - 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <a href="#">button</a>
+            </div>
+        </div><!-- .info end -->
+    </section><!-- .items01 end -->
+
+    <section class="items02">
+        <figure>
+            <img src="images/coffee03.jpg" alt="커피" />
+        </figure>
+        <div class="info">
+            <div>
+                <h4>coffee - 2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <a href="#">button</a>
+            </div>
+        </div><!-- .info end -->
+    </section><!-- .items01 end -->
+
+    <section class="items03">
+        <figure>
+            <img src="images/coffee04.jpg" alt="커피" />
+        </figure>
+        <div class="info">
+            <div>
+                <h4>coffee - 3</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <a href="#">button</a>
+            </div>
+        </div><!-- .info end -->
+    </section><!-- .items01 end -->
+</body>
+
+</html>
