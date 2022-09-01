@@ -58,3 +58,10 @@ table {
 	border-spacing: 0;
 }
  
+
+
+/* 폰트아이콘 */
+.info i span {
+	position: absolute;
+	left: -9999999px;
+}
